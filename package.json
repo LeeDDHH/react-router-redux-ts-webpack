@@ -1,7 +1,7 @@
 {
-  "name": "react-ts-webpack",
+  "name": "react-router-redux-ts-webpack",
   "version": "1.0.0",
-  "description": "react + typescript + webpack template",
+  "description": "react + typescript + webpack + react-router + react-redux template",
   "main": "dist/index.js",
   "private": true,
   "scripts": {

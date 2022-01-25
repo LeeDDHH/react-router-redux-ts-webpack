@@ -1,4 +1,4 @@
-# React + TypeScript + Webpack5 + React Router
+# React + TypeScript + Webpack5 + React Router + React Redux
 
 ## プロジェクト前提
 
@@ -20,6 +20,8 @@
 |webpack-cli|4.9.1|
 |webpack-dev-server|4.7.3|
 |react-router-dom|6.2.1|
+|react-redux|7.2.6|
+|@reduxjs/toolkit|1.7.1|
 
 ---
 
