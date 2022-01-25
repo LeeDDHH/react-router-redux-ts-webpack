@@ -3,43 +3,40 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 import type { RootState } from '../store'
 
-// Define a type for the slice state
+// Storeで管理するオブジェクト（slice）の型
 interface CounterState {
   value: number
 }
 
-// Define the initial state using that type
+// Storeで管理するオブジェクトの初期化
 const initialState: CounterState = {
   value: 0,
 };
 
+// Reduxで使うロジックとアクションがまとまったものをsliceと呼ぶ
+// ルートにあるReduxのstateオブジェクトを複数の「スライス」に分割することに由来する
 export const counterSlice = createSlice({
+  // ReduxのStore内でオブジェクトを識別するための名称
   name: 'counter',
-  initialState: {
-    value: 0,
-  },
+  initialState: initialState,
   reducers: {
     increment: (state) => {
-      // Redux Toolkit allows us to write "mutating" logic in reducers. It
-      // doesn't actually mutate the state because it uses the Immer library,
-      // which detects changes to a "draft state" and produces a brand new
-      // immutable state based off those changes
       state.value += 1
     },
     decrement: (state) => {
       state.value -= 1
     },
-    // Use the PayloadAction type to declare the contents of `action.payload`
+    // PayloadActionを使うことで、渡されるactionの中身の値の型が指定できる
     incrementByAmount: (state, action: PayloadAction<number>) => {
       state.value += action.payload
     },
   },
 })
 
-// Action creators are generated for each case reducer function
+// 生成したsliceからAction Creatorを関数ごとに生成する
 export const { increment, decrement, incrementByAmount } = counterSlice.actions;
 
-// Other code such as selectors can use the imported `RootState` type
+// Action Creator以外で生成する必要がある関数には、RootStateタイプを指定することでReuxのStoreが管理する値を参照できる
 export const selectCount = (state: RootState) => state.counter.value;
 
 export default counterSlice.reducer;
