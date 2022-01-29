@@ -10,24 +10,24 @@
 
 ## 構成
 
-|||
-|:---:|:---:|
-|Node.js|16.9.0|
-|npm|7.21.1|
-|React|17.0.2|
-|TypeScript|4.5.5|
-|webpack|5.66.0|
-|webpack-cli|4.9.1|
-|webpack-dev-server|4.7.3|
-|react-router-dom|6.2.1|
-|react-redux|7.2.6|
-|@reduxjs/toolkit|1.7.1|
+|                    |        |
+| :----------------: | :----: |
+|      Node.js       | 16.9.0 |
+|        npm         | 7.21.1 |
+|       React        | 17.0.2 |
+|     TypeScript     | 4.5.5  |
+|      webpack       | 5.66.0 |
+|    webpack-cli     | 4.9.1  |
+| webpack-dev-server | 4.7.3  |
+|  react-router-dom  | 6.2.1  |
+|    react-redux     | 7.2.6  |
+|  @reduxjs/toolkit  | 1.7.1  |
 
 ---
 
 ## コマンド
 
-### ローカルでdev実行
+### ローカルで dev 実行
 
 ```bash
 npm run dev
@@ -37,7 +37,7 @@ npm run dev
 - `dev` 用にビルドする
 - `webpack` の `devServer` で立ち上げる
 
-### ローカルでprod実行
+### ローカルで prod 実行
 
 ```bash
 npm start
@@ -45,9 +45,9 @@ npm start
 
 - `dist` を削除する
 - `prod` 用にビルドする
-- `http-server` でローカルのHTTPサーバーをで立ち上げる
+- `http-server` でローカルの HTTP サーバーをで立ち上げる
 
-### prod用のビルドをする
+### prod 用のビルドをする
 
 ```bash
 npm run build
