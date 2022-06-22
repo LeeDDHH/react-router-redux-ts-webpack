@@ -12,16 +12,16 @@
 
 |                    |         |
 | :----------------: | :-----: |
-|      Node.js       | 16.14.0 |
-|        npm         |  8.3.1  |
-|       React        | 17.0.2  |
-|     TypeScript     |  4.6.2  |
-|      webpack       | 5.70.0  |
-|    webpack-cli     |  4.9.2  |
-| webpack-dev-server |  4.7.4  |
-|  react-router-dom  |  6.2.2  |
-|    react-redux     |  7.2.6  |
-|  @reduxjs/toolkit  |  1.8.0  |
+|      Node.js       | 18.0.0  |
+|        npm         |  8.6.0  |
+|       React        | 18.2.0  |
+|     TypeScript     |  4.7.4  |
+|      webpack       | 5.73.0  |
+|    webpack-cli     |  4.10.0 |
+| webpack-dev-server |  4.9.2  |
+|  react-router-dom  |  6.3.0  |
+|    react-redux     |  8.0.2  |
+|  @reduxjs/toolkit  |  1.8.2  |
 
 ---
 
